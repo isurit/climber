@@ -7,12 +7,29 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="DATA!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
+    </TextView>
+    <LinearLayout
+        android:layout_width="200dp"
+
+        android:layout_height="200dp">
+
+        <Button
+            android:id="@+id/clickBtnA"
+            android:layout_width="100dp"
+            android:layout_height="100dp" android:text="A DATA"/>
+
+        <Button
+            android:id="@+id/clickBtnB"
+            android:layout_width="100dp"
+            android:layout_height="100dp" android:text="B DATA"/>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
