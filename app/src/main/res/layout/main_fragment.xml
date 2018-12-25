@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#4039">
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="100dp"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horiGuideLine"
+        app:layout_constraintGuide_begin="100dp"
+        android:orientation="horizontal" />
+
+
+    <Button
+        android:id="@+id/firstBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="first button"
+        app:layout_constraintTop_toBottomOf="@id/horiGuideLine"
+        app:layout_constraintStart_toEndOf="@id/guideline"/>
+    <Button
+        android:id="@+id/secondBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="second button"
+        app:layout_constraintTop_toBottomOf="@id/firstBtn"
+        app:layout_constraintStart_toEndOf="@id/guideline"/>
+    <Button
+        android:id="@+id/thirdBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="third button"
+        app:layout_constraintTop_toBottomOf="@id/secondBtn"
+        app:layout_constraintStart_toEndOf="@id/guideline"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#6262">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:text="FirstFragment"
+        android:textSize="30dp" />
+
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horiGuideLine"
+        app:layout_constraintGuide_begin="0dp"
+        android:orientation="horizontal" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Back"
+        app:layout_constraintTop_toBottomOf="@id/horiGuideLine"
+        app:layout_constraintEnd_toStartOf="@id/nextBtn"/>
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Next"
+        app:layout_constraintTop_toBottomOf="@id/horiGuideLine"
+        app:layout_constraintEnd_toEndOf="@id/parent"/>
+
+    <LinearLayout
+        android:id="@+id/contentsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
